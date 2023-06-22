@@ -1,13 +1,18 @@
+import { Navbar } from '@/components/Navbar';
+import Head from 'next/head';
 import React from 'react';
 
 function Home() {
   return (
-    <div className="font-titleFont">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, qui.
-      Molestiae architecto, sit, dolore omnis praesentium fuga soluta odio esse
-      fugit veniam doloribus eos ad placeat enim repellendus. Provident,
-      cupiditate.
-    </div>
+    <>
+      <Head>
+        <title>Barkın Köroğlu</title>
+        <link rel="icon" href="/vercel.svg" />
+      </Head>
+      <main className="w-full h-screen font-bodyFont bg-bodyColor text-textLight overflow-x-hidden overflow-y-scroll">
+        <Navbar />
+      </main>
+    </>
   );
 }
 
