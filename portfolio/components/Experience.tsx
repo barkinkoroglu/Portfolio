@@ -3,7 +3,7 @@ import SectionTitle from './SectionTitle';
 import Manisa from './works/Manisa';
 
 function Experience() {
-  const [work, setWorkManisa] = useState(true);
+  const [workManisa, setWorkManisa] = useState(true);
 
   const handleManisa = () => {
     setWorkManisa(true);
