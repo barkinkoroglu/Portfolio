@@ -74,7 +74,8 @@ const Projects = () => {
               <h3 className="text-2xl font-bold">Evo Gym</h3>
               <p className="bg-[#112240] text-sm md:text-base p-2 xl:-mr-16 md:p-6 rounded-md">
                 The project showcases the interface design of a website for Evo
-                Gym, demonstrating a visually appealing and user-friendly layout
+                Gym, demonstrating a visually appealing and user-friendly
+                layout.
               </p>
               <ul className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
                 <li>React.js</li>
