@@ -5,6 +5,7 @@ import RightSide from '@/components/RightSide';
 import Head from 'next/head';
 import React from 'react';
 import { motion } from 'framer-motion';
+import Banner from '@/components/Banner';
 function Home() {
   return (
     <>
@@ -23,8 +24,13 @@ function Home() {
           >
             <LeftSide />
           </motion.div>
-          <div className=" h-[88vh] mx-auto p-4 ">
-            <MidSide />
+          <div className=" h-[88vh] w-full mx-auto p-4 ">
+            <Banner />
+            {/* About */}
+            {/* Experience  */}
+            {/* Projects  */}
+            {/* Contact  */}
+            {/* Footer */}
           </div>
           <motion.div
             initial={{ opacity: 0 }}
