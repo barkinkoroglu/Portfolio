@@ -12,7 +12,7 @@ function Manisa() {
         <span className="text-textGreen tracking-wide">#MMM</span>
       </h3>
       <p className="text-sm mt-1 font-medium text-textDark">
-        June 2022 - June 2022
+        June 2022 - July 2022
       </p>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 text-textDark">
