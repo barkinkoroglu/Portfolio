@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import SectionTitle from './SectionTitle';
-import Manisa from './works/manisa';
+import Manisa from './works/Manisa';
 
 function Experience() {
-  const [workManisa, setWorkManisa] = useState(true);
+  const [work, setWorkManisa] = useState(true);
 
   const handleManisa = () => {
     setWorkManisa(true);
