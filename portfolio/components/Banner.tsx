@@ -1,6 +1,19 @@
 import { motion } from 'framer-motion';
 
 function Banner() {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    const href = e.currentTarget.href;
+    const targetID = href.replace(/.*\#/, '');
+    const elem = document.getElementById(targetID);
+    elem?.scrollIntoView({ behavior: 'smooth' });
+
+    const links = document.querySelectorAll('.nav-link');
+    links.forEach((link) => {
+      link.classList.remove('active');
+    });
+    e.currentTarget.classList.add('active');
+  };
   return (
     <section
       id="home"
@@ -38,14 +51,16 @@ function Banner() {
         implementing Agile and Scrum methodologies. I have a passion for
         continuous learning and staying updated with new technologies. {''}
       </motion.p>
-      <motion.button
+      <motion.a
+        onClick={handleScroll}
+        href="#project"
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.9 }}
-        className="w-52 h-14 text-sm font-titleFont border border-textGreen rounded-md text-textGreen tracking-wide hover:bg-hoverColor duration-300"
+        className="w-52 h-14 text-sm font-titleFont border border-textGreen flex items-center justify-center rounded-md text-textGreen tracking-wide hover:bg-hoverColor duration-300"
       >
         Check out my Project!
-      </motion.button>
+      </motion.a>
     </section>
   );
 }
